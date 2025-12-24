@@ -28,13 +28,13 @@ export default function Home() {
             className="text-3xl sm:text-4xl md:text-5xl lg:text-[55px] text-[#4A4A4A] mb-4 sm:mb-5 leading-[1.1] tracking-tight px-2"
             style={{ fontFamily: 'var(--font-merriweather), Georgia, serif' }}
           >
-            Affordable Obamacare health insurance for you and your family
+            Seguro de salud Obamacare asequible para ti y tu familia
           </h1>
           <p 
             className="text-base sm:text-lg text-[#4A4A4A] mb-8 sm:mb-10 md:mb-12 font-normal px-4"
             style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
           >
-            Get covered in minutes. Essential health benefits. Subsidies available for qualifying families.
+            Obtén cobertura en minutos. Beneficios de salud esenciales. Subsidios disponibles para familias elegibles.
           </p>
           <div className="flex flex-col items-center gap-4 sm:gap-5 md:gap-6">
             <Link 
@@ -42,14 +42,14 @@ export default function Home() {
               className="bg-[#FF006A] py-4 px-10 hover:bg-[#E5005F] text-white font-semibold px-8 sm:px-10 md:px-12 py-3 sm:py-3.5 md:py-4 rounded-md text-sm sm:text-base transition-colors shadow-sm tracking-wide text-center sm:w-auto"
               style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
             >
-              GET A QUOTE
+              OBTENER COTIZACIÓN
             </Link>
             <Link 
               href="#" 
               className="text-[#FF006A] text-xs sm:text-sm hover:underline font-medium"
               style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
             >
-              How Obamacare health insurance works
+              Cómo funciona el seguro de salud Obamacare
             </Link>
           </div>
           
@@ -74,13 +74,13 @@ export default function Home() {
             className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#4A4A4A] mb-3"
             style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
           >
-            Trusted by millions of Americans
+            Confiado por millones de estadounidenses
           </h2>
           <p 
             className="text-sm sm:text-base text-[#4A4A4A] mb-8 sm:mb-10 md:mb-12 max-w-3xl mx-auto font-normal px-4"
             style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
           >
-            We help you find the best Obamacare plans with essential health benefits and affordable premiums
+            Te ayudamos a encontrar los mejores planes Obamacare con beneficios de salud esenciales y primas asequibles
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12 max-w-5xl mx-auto">
@@ -101,8 +101,8 @@ export default function Home() {
                 className="text-xl sm:text-2xl text-[#4A4A4A] leading-relaxed text-center px-2"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                <span className="font-semibold">Plans from</span><br />
-                <span className="font-bold">$0/month</span>
+                <span className="font-semibold">Planes desde</span><br />
+                <span className="font-bold">$0/mes</span>
               </p>
             </div>
 
@@ -123,8 +123,8 @@ export default function Home() {
                 className="text-xl sm:text-2xl text-[#4A4A4A] leading-relaxed text-center px-2"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                <span className="font-semibold">Pre-existing conditions</span><br />
-                <span className="font-semibold">don&apos;t matter</span>
+                <span className="font-semibold">Condiciones preexistentes</span><br />
+                <span className="font-semibold">no importan</span>
               </p>
             </div>
 
@@ -145,8 +145,8 @@ export default function Home() {
                 className="text-xl sm:text-2xl text-[#4A4A4A] leading-relaxed text-center px-2"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                <span className="font-semibold">Government subsidies</span><br />
-                <span className="font-semibold">available</span>
+                <span className="font-semibold">Subsidios gubernamentales</span><br />
+                <span className="font-semibold">disponibles</span>
               </p>
             </div>
           </div>
@@ -160,7 +160,7 @@ export default function Home() {
             className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#4A4A4A] mb-3 text-center"
             style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
           >
-            Our Additional Services
+            Nuestros Servicios Adicionales
           </h2>
           <div className="flex items-center justify-center gap-2 mb-8 sm:mb-10 md:mb-12">
             
@@ -168,7 +168,7 @@ export default function Home() {
               className="text-sm sm:text-base text-[#4A4A4A] text-center font-normal px-4"
               style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
             >
-              Professional services tailored to meet your needs.
+              Servicios profesionales adaptados a tus necesidades.
             </p>
           </div>
           
@@ -188,26 +188,26 @@ export default function Home() {
                 className="text-xl sm:text-xl md:text-2xl font-semibold text-[#4A4A4A] mb-2"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                Health Insurance
+                Seguro de Salud
               </h3>
               <p 
                 className="text-xs sm:text-sm text-gray-600 mb-4 sm:mb-5 md:mb-6 flex-grow"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                Comprehensive health coverage plans for individuals and families with affordable premiums
+                Planes de cobertura de salud integrales para individuos y familias con primas asequibles
               </p>
               <Link 
                 href="/contact"
                 className="bg-[#FF006A] hover:bg-[#E5005F] text-white font-semibold px-4 sm:px-5 md:px-6 py-2.5 sm:py-2.5 md:py-3 rounded-md text-xs sm:text-sm transition-colors w-full mb-2 tracking-wide text-center block"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                LEARN MORE
+                SABER MÁS
               </Link>
               <p 
                 className="text-[10px] sm:text-xs text-gray-600"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                GET A QUOTE TODAY
+                OBTÉN UNA COTIZACIÓN HOY
               </p>
             </div>
 
@@ -226,26 +226,26 @@ export default function Home() {
                 className="text-xl sm:text-xl md:text-2xl font-semibold text-[#4A4A4A] mb-2"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                Immigration Forms
+                Formularios de Inmigración
               </h3>
               <p 
                 className="text-xs sm:text-sm text-gray-600 mb-4 sm:mb-5 md:mb-6 flex-grow"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                Expert assistance with immigration form preparation and documentation for your visa applications
+                Asistencia experta con la preparación de formularios de inmigración y documentación para tus solicitudes de visa
               </p>
               <Link 
                 href="/contact"
                 className="bg-[#FF006A] hover:bg-[#E5005F] text-white font-semibold px-4 sm:px-5 md:px-6 py-2.5 sm:py-2.5 md:py-3 rounded-md text-xs sm:text-sm transition-colors w-full mb-2 tracking-wide text-center block"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                LEARN MORE
+                SABER MÁS
               </Link>
               <p 
                 className="text-[10px] sm:text-xs text-gray-600"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                START YOUR APPLICATION
+                INICIA TU SOLICITUD
               </p>
             </div>
 
@@ -264,26 +264,26 @@ export default function Home() {
                 className="text-xl sm:text-xl md:text-2xl font-semibold text-[#4A4A4A] mb-2"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                LLC Creation
+                Creación de LLC
               </h3>
               <p 
                 className="text-xs sm:text-sm text-gray-600 mb-4 sm:mb-5 md:mb-6 flex-grow"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                Complete LLC formation services to help you start your business with proper legal structure
+                Servicios completos de formación de LLC para ayudarte a iniciar tu negocio con la estructura legal adecuada
               </p>
               <Link 
                 href="/contact"
                 className="bg-[#FF006A] hover:bg-[#E5005F] text-white font-semibold px-4 sm:px-5 md:px-6 py-2.5 sm:py-2.5 md:py-3 rounded-md text-xs sm:text-sm transition-colors w-full mb-2 tracking-wide text-center block"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                LEARN MORE
+                SABER MÁS
               </Link>
               <p 
                 className="text-[10px] sm:text-xs text-gray-600"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                FORM YOUR LLC NOW
+                FORMA TU LLC AHORA
               </p>
             </div>
 
@@ -302,26 +302,26 @@ export default function Home() {
                 className="text-xl sm:text-xl md:text-2xl font-semibold text-[#4A4A4A] mb-2"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                Web Development
+                Desarrollo Web
               </h3>
               <p 
                 className="text-xs sm:text-sm text-gray-600 mb-4 sm:mb-5 md:mb-6 flex-grow"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                Professional web development services to create modern, responsive websites for your business
+                Servicios profesionales de desarrollo web para crear sitios web modernos y responsivos para tu negocio
               </p>
               <Link 
                 href="/contact"
                 className="bg-[#FF006A] hover:bg-[#E5005F] text-white font-semibold px-4 sm:px-5 md:px-6 py-2.5 sm:py-2.5 md:py-3 rounded-md text-xs sm:text-sm transition-colors w-full mb-2 tracking-wide text-center block"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                LEARN MORE
+                SABER MÁS
               </Link>
               <p 
                 className="text-[10px] sm:text-xs text-gray-600"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                GET YOUR QUOTE
+                OBTÉN TU COTIZACIÓN
               </p>
             </div>
           </div>
@@ -335,15 +335,15 @@ export default function Home() {
             className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#4A4A4A] mb-4 sm:mb-5 md:mb-6"
             style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
           >
-            Good to know...
+            Bueno saber...
           </h2>
           <p 
             className="text-base sm:text-lg text-[#4A4A4A] mb-8 sm:mb-10 md:mb-12 max-w-2xl mx-auto px-4"
             style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
           >
-            Health insurance can be confusing, so we worked hard to make it simple. If you still have questions, you can check out{' '}
+            El seguro de salud puede ser confuso, por eso trabajamos duro para simplificarlo. Si aún tienes preguntas, puedes consultar{' '}
             <Link href="#" className="text-[#FF006A] underline hover:no-underline">
-              Obamacare explained
+              Obamacare explicado
             </Link>
           </p>
           

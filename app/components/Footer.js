@@ -12,7 +12,7 @@ export default function Footer() {
               className="text-sm text-gray-600 leading-relaxed"
               style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
             >
-              Affordable health insurance for you and your family. Get covered in minutes.
+              Seguro de salud asequible para ti y tu familia. Obtén cobertura en minutos.
             </p>
           </div>
 
@@ -22,7 +22,7 @@ export default function Footer() {
               className="text-base font-semibold text-[#4A4A4A] mb-4"
               style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
             >
-              Account & Support
+              Cuenta y Soporte
             </h3>
             <ul className="space-y-3">
             
@@ -32,7 +32,7 @@ export default function Footer() {
                   className="text-sm text-gray-600 hover:text-[#FF006A] transition-colors"
                   style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
                 >
-                  Contact Us
+                  Contáctanos
                 </Link>
               </li>
               <li>
@@ -41,7 +41,7 @@ export default function Footer() {
                   className="text-sm text-gray-600 hover:text-[#FF006A] transition-colors"
                   style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
                 >
-                  Customer Support
+                  Soporte al Cliente
                 </Link>
               </li>
             </ul>
@@ -58,7 +58,7 @@ export default function Footer() {
                 className="text-gray-600 hover:text-[#FF006A] transition-colors"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                Privacy Policy
+                Política de Privacidad
               </Link>
               <span className="text-gray-400">|</span>
               <Link 
@@ -66,7 +66,7 @@ export default function Footer() {
                 className="text-gray-600 hover:text-[#FF006A] transition-colors"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                Terms of Service
+                Términos de Servicio
               </Link>
               <span className="text-gray-400">|</span>
               <Link 
@@ -74,7 +74,7 @@ export default function Footer() {
                 className="text-gray-600 hover:text-[#FF006A] transition-colors"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                Cookie Policy
+                Política de Cookies
               </Link>
             </div>
 

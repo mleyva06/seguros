@@ -42,19 +42,19 @@ export default function SuccessPage() {
               className="text-3xl sm:text-4xl md:text-5xl text-[#4A4A4A] font-semibold mb-4"
               style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
             >
-              Success!
+              ¡Éxito!
             </h1>
             <p
               className="text-base sm:text-lg text-[#4A4A4A] font-normal mb-2"
               style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
             >
-              Your information has been successfully received.
+              Tu información ha sido recibida exitosamente.
             </p>
             <p
               className="text-base sm:text-lg text-[#4A4A4A] font-normal"
               style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
             >
-              A representative will contact you soon.
+              Un representante se pondrá en contacto contigo pronto.
             </p>
           </div>
 
@@ -64,7 +64,7 @@ export default function SuccessPage() {
             className="w-full mt-8 bg-gradient-to-r from-[#FF006A] to-[#E5005F] hover:from-[#E5005F] hover:to-[#CC0054] text-white font-semibold py-4 rounded-md text-base transition-all shadow-sm tracking-wide uppercase text-center"
             style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
           >
-            Continue
+            Continuar
           </Link>
         </div>
       </main>
