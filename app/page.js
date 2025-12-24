@@ -7,60 +7,46 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white relative overflow-hidden">
       {/* Header Navigation */}
-      <header className="relative z-10 flex items-center justify-center sm:justify-between px-4 sm:px-6 md:px-8 py-3 sm:py-4 md:py-5">
-        {/* Desktop: Left Navigation */}
-        <nav className="hidden sm:flex items-center gap-2 sm:gap-4 md:gap-7 text-xs sm:text-sm font-medium" style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}>
-          <Link href="#" className="text-gray-600 hover:text-gray-900 transition-colors hidden sm:inline-block">Individual Plans</Link>
-          <Link href="#" className="text-gray-600 hover:text-gray-900 transition-colors hidden md:inline-block">Family Plans</Link>
-          <Link href="#" className="text-gray-900 font-semibold">Health</Link>
-          <Link href="#" className="text-gray-600 hover:text-gray-900 transition-colors hidden sm:inline-block">Medicaid</Link>
-          <Link href="#" className="text-gray-600 hover:text-gray-900 transition-colors hidden md:inline-block">Medicare</Link>
-          <Link href="#" className="text-gray-600 hover:text-gray-900 transition-colors hidden lg:inline-block">Resources</Link>
-        </nav>
-
-        {/* Center Logo */}
-        <div className="sm:absolute sm:left-1/2 sm:transform sm:-translate-x-1/2">
+      <header className="relative z-10 flex items-center justify-center px-4 sm:px-6 md:px-8 py-3 sm:py-4 md:py-5">
+        {/* Logo */}
+        <div className="-mt-14 md:-mt-15 lg:-mt-18">
           <Image
-            src="/logo.png"
+            src="/asc.png"
             alt="Lemonade"
-            width={140}
-            height={50}
+            width={280}
+            height={100}
             priority
-            className="h-6 sm:h-7 md:h-9 w-auto"
+            className="h-44 md:h-48 lg:h-64 w-auto"
           />
         </div>
-
-        {/* Desktop: Right Navigation */}
-        <nav className="hidden sm:flex items-center" style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}>
-          <Link href="#" className="text-xs sm:text-sm text-gray-600 hover:text-gray-900 transition-colors font-medium">My Account</Link>
-        </nav>
       </header>
 
       {/* Main Content */}
-      <main className="relative z-10 flex flex-col items-center px-8 pt-16 pb-40">
+      <main className="-mt-25 md:-mt-30 lg:-mt-35 relative z-10 flex flex-col items-center px-4 sm:px-6 md:px-8 pt-10 sm:pt-12 md:pt-16 pb-32 sm:pb-36 md:pb-40">
         <div className="max-w-3xl text-center">
           <h1 
-            className="text-3xl sm:text-4xl md:text-5xl lg:text-[55px] text-[#4A4A4A] mb-5 leading-[1.1] tracking-tight"
+            className="text-3xl sm:text-4xl md:text-5xl lg:text-[55px] text-[#4A4A4A] mb-4 sm:mb-5 leading-[1.1] tracking-tight px-2"
             style={{ fontFamily: 'var(--font-merriweather), Georgia, serif' }}
           >
             Affordable Obamacare health insurance for you and your family
           </h1>
           <p 
-            className="text-[18px] text-[#4A4A4A] mb-12 font-normal"
+            className="text-base sm:text-lg text-[#4A4A4A] mb-8 sm:mb-10 md:mb-12 font-normal px-4"
             style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
           >
             Get covered in minutes. Essential health benefits. Subsidies available for qualifying families.
           </p>
-          <div className="flex flex-col items-center gap-6">
-            <button 
-              className="bg-[#FF006A] hover:bg-[#E5005F] text-white font-semibold px-12 py-4 rounded-md text-base transition-colors shadow-sm tracking-wide"
+          <div className="flex flex-col items-center gap-4 sm:gap-5 md:gap-6">
+            <Link 
+              href="/contact"
+              className="bg-[#FF006A] py-4 px-10 hover:bg-[#E5005F] text-white font-semibold px-8 sm:px-10 md:px-12 py-3 sm:py-3.5 md:py-4 rounded-md text-sm sm:text-base transition-colors shadow-sm tracking-wide text-center sm:w-auto"
               style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
             >
               GET A QUOTE
-            </button>
+            </Link>
             <Link 
               href="#" 
-              className="text-[#FF006A] text-sm hover:underline font-medium"
+              className="text-[#FF006A] text-xs sm:text-sm hover:underline font-medium"
               style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
             >
               How Obamacare health insurance works
@@ -68,7 +54,7 @@ export default function Home() {
           </div>
           
           {/* Health Image */}
-          <div className="mt-8 -mb-40 w-full max-w-[1922px]">
+          <div className="mt-6 sm:mt-7 md:mt-8 -mb-32 sm:-mb-36 md:-mb-40 w-full max-w-[1922px]">
             <Image
               src="/familyok.png"
               alt="Health illustration"
@@ -82,79 +68,85 @@ export default function Home() {
       </main>
 
       {/* Trusted Section */}
-      <section className="relative z-10 py-16 px-8 bg-[#F7F7F7]">
+      <section className="relative z-10 py-10 sm:py-12 md:py-16 px-4 sm:px-6 md:px-8 bg-[#F7F7F7]">
         <div className="max-w-6xl mx-auto text-center mt-5 mb-5">
           <h2 
-            className="text-3xl md:text-4xl font-semibold text-[#4A4A4A] mb-3"
+            className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#4A4A4A] mb-3"
             style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
           >
             Trusted by millions of Americans
           </h2>
           <p 
-            className="text-base text-[#4A4A4A] mb-12 max-w-3xl mx-auto font-normal"
+            className="text-sm sm:text-base text-[#4A4A4A] mb-8 sm:mb-10 md:mb-12 max-w-3xl mx-auto font-normal px-4"
             style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
           >
             We help you find the best Obamacare plans with essential health benefits and affordable premiums
           </p>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 max-w-5xl mx-auto">
-            {/* Payouts Section */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-10 md:gap-12 max-w-5xl mx-auto">
+            {/* Plans from $0 Section */}
             <div className="flex flex-col items-center">
-              <div className="w-34 h-34 bg-white rounded-full flex items-center justify-center mb-5 shadow-sm p-4">
+              <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 bg-white rounded-full flex items-center justify-center mb-4 sm:mb-5 shadow-sm p-1">
                 <Image
-                  src="/payouts.4d0cf05c.svg"
-                  alt="Payouts"
-                  width={50}
-                  height={50}
+                  src="/costo.png"
+                  alt="Plans from $0"
+                  width={288}
+                  height={288}
                   className="w-full h-full object-contain"
+                  quality={100}
+                  unoptimized
                 />
               </div>
               <p 
-                className="text-2xl text-[#4A4A4A] leading-relaxed text-center"
+                className="text-xl sm:text-2xl text-[#4A4A4A] leading-relaxed text-center px-2"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                <span className="font-semibold">Coverage up to</span><br />
-                <span className="font-bold text-base" >$1,000,000+</span>
+                <span className="font-semibold">Plans from</span><br />
+                <span className="font-bold">$0/month</span>
               </p>
             </div>
 
-            {/* Approval Rate Section */}
+            {/* Pre-existing Conditions Section */}
             <div className="flex flex-col items-center">
-              <div className="w-34 h-34 bg-white rounded-full flex items-center justify-center mb-5 shadow-sm p-4">
+              <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 bg-white rounded-full flex items-center justify-center mb-4 sm:mb-5 shadow-sm p-1">
                 <Image
-                  src="/apps.1249990e.svg"
-                  alt="Approved"
-                  width={50}
-                  height={50}
+                  src="/pre.png"
+                  alt="Pre-existing conditions"
+                  width={288}
+                  height={288}
                   className="w-full h-full object-contain"
+                  quality={100}
+                  unoptimized
                 />
               </div>
               <p 
-                className="text-2xl text-[#4A4A4A] leading-relaxed text-center"
+                className="text-xl sm:text-2xl text-[#4A4A4A] leading-relaxed text-center px-2"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                <span className="font-semibold">No medical exam</span><br />
-                <span className="font-semibold">required</span>
+                <span className="font-semibold">Pre-existing conditions</span><br />
+                <span className="font-semibold">don&apos;t matter</span>
               </p>
             </div>
 
-            {/* Years in Business Section */}
+            {/* Government Subsidies Section */}
             <div className="flex flex-col items-center">
-                <div className="w-34 h-34 bg-white rounded-full flex items-center justify-center mb-5 shadow-sm p-4">
+                <div className="w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 bg-white rounded-full flex items-center justify-center mb-4 sm:mb-5 shadow-sm p-1">
                 <Image
-                  src="/years.800c7078.svg"
-                  alt="Years in business"
-                  width={50}
-                  height={50}
+                  src="/gobierno.png"
+                  alt="Government subsidies"
+                  width={288}
+                  height={288}
                   className="w-full h-full object-contain"
+                  quality={100}
+                  unoptimized
                 />
               </div>
               <p 
-                className="text-2xl text-[#4A4A4A] leading-relaxed text-center"
+                className="text-xl sm:text-2xl text-[#4A4A4A] leading-relaxed text-center px-2"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                <span className="font-bold text-base">10+ years</span><br />
-                <span className="font-semibold">of Obamacare</span>
+                <span className="font-semibold">Government subsidies</span><br />
+                <span className="font-semibold">available</span>
               </p>
             </div>
           </div>
@@ -162,172 +154,174 @@ export default function Home() {
       </section>
 
       {/* More products from Lemonade Section */}
-      <section className="relative z-10 py-16 px-8 bg-white">
+      <section className="relative z-10 py-10 sm:py-12 md:py-16 px-4 sm:px-6 md:px-8 bg-white">
         <div className="max-w-6xl mx-auto">
           <h2 
-            className="text-3xl md:text-4xl font-semibold text-[#4A4A4A] mb-3 text-center"
+            className="text-2xl sm:text-3xl md:text-4xl font-semibold text-[#4A4A4A] mb-3 text-center"
             style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
           >
-            Choose the right plan for you
+            Our Additional Services
           </h2>
-          <div className="flex items-center justify-center gap-2 mb-12">
-            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M6 0L7.5 4.5L12 6L7.5 7.5L6 12L4.5 7.5L0 6L4.5 4.5L6 0Z" fill="#FF006A"/>
-            </svg>
+          <div className="flex items-center justify-center gap-2 mb-8 sm:mb-10 md:mb-12">
+            
             <p 
-              className="text-base text-[#4A4A4A] text-center font-normal"
+              className="text-sm sm:text-base text-[#4A4A4A] text-center font-normal px-4"
               style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
             >
-              All plans include essential health benefits and preventive care.
+              Professional services tailored to meet your needs.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
-            {/* Bronze Plan Card */}
-            <div className="bg-white rounded-lg shadow-sm p-6 flex flex-col items-center text-center border border-gray-100 hover:shadow-md transition-shadow">
-              <div className="w-24 h-24 mb-4 flex items-center justify-center">
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6 max-w-6xl mx-auto">
+            {/* Health Insurance Service Card */}
+            <div className="bg-white rounded-lg shadow-sm p-4 sm:p-5 md:p-6 flex flex-col items-center text-center border border-gray-100 hover:shadow-md transition-shadow">
+              <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-44 md:h-44 -my-6 sm:-my-7 md:-my-8 flex items-center justify-center">
                 <Image
-                  src="/homeowners_desktop.98f9c1b4.svg"
-                  alt="Bronze Plan"
-                  width={96}
-                  height={96}
+                  src="/segurosalud.png"
+                  alt="Health Insurance"
+                  width={176}
+                  height={176}
                   className="w-full h-full object-contain"
                 />
               </div>
               <h3 
-                className="text-2xl font-semibold text-[#4A4A4A] mb-2"
+                className="text-xl sm:text-xl md:text-2xl font-semibold text-[#4A4A4A] mb-2"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                Bronze
+                Health Insurance
               </h3>
               <p 
-                className="text-sm text-gray-600 mb-6 flex-grow"
+                className="text-xs sm:text-sm text-gray-600 mb-4 sm:mb-5 md:mb-6 flex-grow"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                Lowest monthly premium, higher out-of-pocket costs
+                Comprehensive health coverage plans for individuals and families with affordable premiums
               </p>
-              <button 
-                className="bg-[#FF006A] hover:bg-[#E5005F] text-white font-semibold px-6 py-3 rounded-md text-sm transition-colors w-full mb-2 tracking-wide"
+              <Link 
+                href="/contact"
+                className="bg-[#FF006A] hover:bg-[#E5005F] text-white font-semibold px-4 sm:px-5 md:px-6 py-2.5 sm:py-2.5 md:py-3 rounded-md text-xs sm:text-sm transition-colors w-full mb-2 tracking-wide text-center block"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                GET A QUOTE
-              </button>
+                LEARN MORE
+              </Link>
               <p 
-                className="text-xs text-gray-600"
+                className="text-[10px] sm:text-xs text-gray-600"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                FROM $200/MO
+                GET A QUOTE TODAY
               </p>
             </div>
 
-            {/* Silver Plan Card */}
-            <div className="bg-white rounded-lg shadow-sm p-6 flex flex-col items-center text-center border border-gray-100 hover:shadow-md transition-shadow">
-              <div className="w-24 h-24 mb-4 flex items-center justify-center">
+            {/* Immigration Forms Service Card */}
+            <div className="bg-white rounded-lg shadow-sm p-4 sm:p-5 md:p-6 flex flex-col items-center text-center border border-gray-100 hover:shadow-md transition-shadow">
+              <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-44 md:h-44 -my-6 sm:-my-7 md:-my-8 flex items-center justify-center">
                 <Image
-                  src="/car_desktop.2ab76640.svg"
-                  alt="Silver Plan"
-                  width={96}
-                  height={96}
+                  src="/edu.png"
+                  alt="Immigration Forms"
+                  width={176}
+                  height={176}
                   className="w-full h-full object-contain"
                 />
               </div>
               <h3 
-                className="text-2xl font-semibold text-[#4A4A4A] mb-2"
+                className="text-xl sm:text-xl md:text-2xl font-semibold text-[#4A4A4A] mb-2"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                Silver
+                Immigration Forms
               </h3>
               <p 
-                className="text-sm text-gray-600 mb-6 flex-grow"
+                className="text-xs sm:text-sm text-gray-600 mb-4 sm:mb-5 md:mb-6 flex-grow"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                Moderate monthly premium and out-of-pocket costs
+                Expert assistance with immigration form preparation and documentation for your visa applications
               </p>
-              <button 
-                className="bg-[#FF006A] hover:bg-[#E5005F] text-white font-semibold px-6 py-3 rounded-md text-sm transition-colors w-full mb-2 tracking-wide"
+              <Link 
+                href="/contact"
+                className="bg-[#FF006A] hover:bg-[#E5005F] text-white font-semibold px-4 sm:px-5 md:px-6 py-2.5 sm:py-2.5 md:py-3 rounded-md text-xs sm:text-sm transition-colors w-full mb-2 tracking-wide text-center block"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                GET A QUOTE
-              </button>
+                LEARN MORE
+              </Link>
               <p 
-                className="text-xs text-gray-600"
+                className="text-[10px] sm:text-xs text-gray-600"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                FROM $300/MO
+                START YOUR APPLICATION
               </p>
             </div>
 
-            {/* Gold Plan Card */}
-            <div className="bg-white rounded-lg shadow-sm p-6 flex flex-col items-center text-center border border-gray-100 hover:shadow-md transition-shadow">
-              <div className="w-24 h-24 mb-4 flex items-center justify-center">
+            {/* LLC Creation Service Card */}
+            <div className="bg-white rounded-lg shadow-sm p-4 sm:p-5 md:p-6 flex flex-col items-center text-center border border-gray-100 hover:shadow-md transition-shadow">
+              <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-44 md:h-44 -my-6 sm:-my-7 md:-my-8 flex items-center justify-center">
                 <Image
-                  src="/pet_desktop.f68654f6.svg"
-                  alt="Gold Plan"
-                  width={96}
-                  height={96}
+                  src="/llc.png"
+                  alt="LLC Creation"
+                  width={176}
+                  height={176}
                   className="w-full h-full object-contain"
                 />
               </div>
               <h3 
-                className="text-2xl font-semibold text-[#4A4A4A] mb-2"
+                className="text-xl sm:text-xl md:text-2xl font-semibold text-[#4A4A4A] mb-2"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                Gold
+                LLC Creation
               </h3>
               <p 
-                className="text-sm text-gray-600 mb-6 flex-grow"
+                className="text-xs sm:text-sm text-gray-600 mb-4 sm:mb-5 md:mb-6 flex-grow"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                Higher monthly premium, lower out-of-pocket costs
+                Complete LLC formation services to help you start your business with proper legal structure
               </p>
-              <button 
-                className="bg-[#FF006A] hover:bg-[#E5005F] text-white font-semibold px-6 py-3 rounded-md text-sm transition-colors w-full mb-2 tracking-wide"
+              <Link 
+                href="/contact"
+                className="bg-[#FF006A] hover:bg-[#E5005F] text-white font-semibold px-4 sm:px-5 md:px-6 py-2.5 sm:py-2.5 md:py-3 rounded-md text-xs sm:text-sm transition-colors w-full mb-2 tracking-wide text-center block"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                GET A QUOTE
-              </button>
+                LEARN MORE
+              </Link>
               <p 
-                className="text-xs text-gray-600"
+                className="text-[10px] sm:text-xs text-gray-600"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                FROM $400/MO
+                FORM YOUR LLC NOW
               </p>
             </div>
 
-            {/* Platinum Plan Card */}
-            <div className="bg-white rounded-lg shadow-sm p-6 flex flex-col items-center text-center border border-gray-100 hover:shadow-md transition-shadow">
-              <div className="w-24 h-24 mb-4 flex items-center justify-center">
+            {/* Web Development Service Card */}
+            <div className="bg-white rounded-lg shadow-sm p-4 sm:p-5 md:p-6 flex flex-col items-center text-center border border-gray-100 hover:shadow-md transition-shadow">
+              <div className="w-32 h-32 sm:w-40 sm:h-40 md:w-44 md:h-44 -my-6 sm:-my-7 md:-my-8 flex items-center justify-center">
                 <Image
-                  src="/life_desktop.a1f2740e.svg"
-                  alt="Platinum Plan"
-                  width={96}
-                  height={96}
+                  src="/web.png"
+                  alt="Web Development"
+                  width={176}
+                  height={176}
                   className="w-full h-full object-contain"
                 />
               </div>
               <h3 
-                className="text-2xl font-semibold text-[#4A4A4A] mb-2"
+                className="text-xl sm:text-xl md:text-2xl font-semibold text-[#4A4A4A] mb-2"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                Platinum
+                Web Development
               </h3>
               <p 
-                className="text-sm text-gray-600 mb-6 flex-grow"
+                className="text-xs sm:text-sm text-gray-600 mb-4 sm:mb-5 md:mb-6 flex-grow"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                Highest monthly premium, lowest out-of-pocket costs
+                Professional web development services to create modern, responsive websites for your business
               </p>
-              <button 
-                className="bg-[#FF006A] hover:bg-[#E5005F] text-white font-semibold px-6 py-3 rounded-md text-sm transition-colors w-full mb-2 tracking-wide"
+              <Link 
+                href="/contact"
+                className="bg-[#FF006A] hover:bg-[#E5005F] text-white font-semibold px-4 sm:px-5 md:px-6 py-2.5 sm:py-2.5 md:py-3 rounded-md text-xs sm:text-sm transition-colors w-full mb-2 tracking-wide text-center block"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                GET A QUOTE
-              </button>
+                LEARN MORE
+              </Link>
               <p 
-                className="text-xs text-gray-600"
+                className="text-[10px] sm:text-xs text-gray-600"
                 style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
               >
-                FROM $500/MO
+                GET YOUR QUOTE
               </p>
             </div>
           </div>
@@ -335,16 +329,16 @@ export default function Home() {
       </section>
 
       {/* Good to know Section */}
-      <section className="relative z-10 py-16 px-8 bg-white">
+      <section className="relative z-10 py-10 sm:py-12 md:py-16 px-4 sm:px-6 md:px-8 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <h2 
-            className="text-4xl md:text-5xl font-semibold text-[#4A4A4A] mb-6"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-[#4A4A4A] mb-4 sm:mb-5 md:mb-6"
             style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
           >
             Good to know...
           </h2>
           <p 
-            className="text-[18px] text-[#4A4A4A] mb-12 max-w-2xl mx-auto"
+            className="text-base sm:text-lg text-[#4A4A4A] mb-8 sm:mb-10 md:mb-12 max-w-2xl mx-auto px-4"
             style={{ fontFamily: 'var(--font-lato), "Helvetica Neue", Arial, sans-serif' }}
           >
             Health insurance can be confusing, so we worked hard to make it simple. If you still have questions, you can check out{' '}
@@ -353,7 +347,7 @@ export default function Home() {
             </Link>
           </p>
           
-          <div className="flex justify-center">
+          <div className="flex justify-center px-2">
             <FAQAccordion />
           </div>
         </div>
