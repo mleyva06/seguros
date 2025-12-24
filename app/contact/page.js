@@ -6,6 +6,9 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { supabase } from "@/lib/supabase";
 
+// Prevent static generation to avoid build-time errors
+export const dynamic = 'force-dynamic';
+
 export default function ContactPage() {
   const router = useRouter();
   const [formData, setFormData] = useState({
