@@ -26,6 +26,13 @@ const lato = Lato({
 export const metadata = {
   title: "Seguro de Salud Obamacare - American Solutions Center",
   description: "Seguro de salud Obamacare asequible para ti y tu familia. Obtén cobertura en minutos con beneficios de salud esenciales y subsidios disponibles.",
+  icons: {
+    icon: [
+      { url: "/logok.png", type: "image/png" },
+    ],
+    shortcut: "/logok.png",
+    apple: "/logok.png",
+  },
 };
 
 export default function RootLayout({ children }) {
